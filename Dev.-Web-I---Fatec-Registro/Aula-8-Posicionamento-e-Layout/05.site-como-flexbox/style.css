@@ -1,0 +1,95 @@
+/* * - é um seletor universal, pode ser usado pra fazer reset básico, que ajuda a configuarr tudo individualmente depois (margin e padding) */
+/* também pode ser usado para definir box-sizing border-box */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+Formatações do Documento 
+.body{ 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6px;
+    color: #333;
+
+}
+
+.container {
+   max-width: 1200px;
+   padding: 0 20px;
+   margin: 0 auto;
+}
+
+.header {
+    background-color: #2c1810;
+    color: #ffffff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+.menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.5s;
+
+
+}
+
+.menu a:hover {
+    color: #d4a574;
+
+    /* Para suavizar a transição, set a transiotion: color #  */
+}
+/* Hero Section */
+
+.hero-section {
+    background: linear-gradient(rgba(44, 24, 26, 0.7) rgba(44, 24, 16, 0.6)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60') no-repeat;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+
+
+}
+.hero-content h1 {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.hero-content p { 
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.btn-primary {
+    background-color: #d4a574;
+    color: #ffffff;
+    padding: 1rem, 2rem;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+
+
+}
+
+
